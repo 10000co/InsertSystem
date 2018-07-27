@@ -73,8 +73,8 @@
 					rowArr.push(addArr);
 				}
 				
-				alert( JSON.stringify(rowArr[0]) );
-				alert( JSON.stringify(rowArr[1]) );
+				//alert( JSON.stringify(rowArr[0]) );
+				//alert( JSON.stringify(rowArr[1]) );
 				
 				addData();
 			}
