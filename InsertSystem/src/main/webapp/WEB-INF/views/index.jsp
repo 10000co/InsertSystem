@@ -89,9 +89,10 @@
 			dataType : 'json',
 			contentType : "application/json; charset=UTF-8",
 			success : function(response) {
-				alert("성공");
+				//alert("완료" + idx_start + "~" + idx_end);
+				
 			}
-		});
+		});	
 	}
 	
 </script>

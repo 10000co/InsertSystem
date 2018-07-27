@@ -28,13 +28,20 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/addData", method = RequestMethod.POST)
-	public @ResponseBody List<Foodinfo> addData(@RequestBody List<Foodinfo> foodinfo) {
+	public @ResponseBody List<Foodinfo> addData(@RequestBody List<Foodinfo> foodinfo) {		
 		
 		for(Foodinfo rs : foodinfo) {
 			System.out.println(rs);
 			repository.insert(rs);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		return foodinfo;
 	}
+	
 }
