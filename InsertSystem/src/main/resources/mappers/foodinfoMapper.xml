@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.insertdata.mms.dao.FoodinfoMapper">
+
+	<insert id="insert" parameterType="Foodinfo">
+		insert into 
+			foodinfo 
+		values(
+			#{num},
+			#{food_cd},
+			#{fdgrp_nm},
+			#{desc_kor},
+			#{serving_wt},
+			#{nutr_cont1},
+			#{nutr_cont2},
+			#{nutr_cont3},
+			#{nutr_cont4},
+			#{nutr_cont5},
+			#{nutr_cont6},
+			#{nutr_cont7},
+			#{nutr_cont8},
+			#{nutr_cont9},
+			#{animal_plant},
+			#{bgn_year}
+		)
+	</insert>
+
+</mapper>
